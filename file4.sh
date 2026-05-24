@@ -1,4 +1,4 @@
 #!/bin/bash
 
-time=$(date +"%s")
-echo "Current time in seconds: $time"
+time=$(date ) #time should be human readable, not in seconds
+echo "Current time: $time"

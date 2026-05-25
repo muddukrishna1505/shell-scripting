@@ -8,7 +8,7 @@ if [ "$drink" == "Thumsup" ]; then
 
     elif [ "$drink" == "sprite" ]; then
 
-    echo "sprite is available"
+    echo -e "\e[32m sprite is available \e[0m"
     echo "Take it and come home"
 
 else

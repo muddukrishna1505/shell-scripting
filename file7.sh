@@ -3,4 +3,5 @@
 Num1=10
 Num2=20
 
-echo "The sum of Num1 and Num2 is $((Num1 + Num2))"
+Sum=$((Num1 + Num2))
+echo "The sum of Num1 and Num2 is: $Sum"

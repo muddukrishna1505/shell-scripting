@@ -1,4 +1,4 @@
-#!/bin/bash
+
 
 # echo "What is the day today?: "
 # read day

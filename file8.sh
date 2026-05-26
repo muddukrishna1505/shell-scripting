@@ -14,6 +14,10 @@
 echo "What is the day today?: "
 read day
 
+
+# Convert input to lowercase
+day=$(echo "$day" | tr 'A-Z' 'a-z')
+
 if [ "$day" == "Sunday" ]; then
     echo -e "Today is $day, \e[33mTake holiday and enjoy\e[0m"
 

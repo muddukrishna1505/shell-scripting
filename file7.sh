@@ -12,4 +12,5 @@ Movies=("Bahubali" "KGF" "RRR" "Vikram" "Ponniyin Selvan")
 echo "The first movie is: ${Movies[0]}"
 echo "The second movie is: ${Movies[1]}"
 echo "All movies are: ${Movies[@]}"
-echo "The number of movies is: ${Movies[#]}"
+echo "The number of movies is: ${#Movies[@]}"
+echo "The length of the first movie name is: ${#Movies[0]}"

@@ -20,7 +20,7 @@ validate() {
         echo -e "$1 server installation \e[32msuccessful\e[0m"
     fi
 }
-mysql --version >> $LOGS_FILE
+dnf install mysql-server -y >> $LOGS_FILE
 
 if [ $? -eq 0 ]; then
     echo -e "\e[35mMYSQL is already installed ... Skipping installation\e[0m"

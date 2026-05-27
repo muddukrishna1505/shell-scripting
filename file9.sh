@@ -10,7 +10,7 @@ fi
 mysql --version
 
 if [ $? -eq 0 ]; then
-    echo -e "\e[34mMYSQL is already installed ... Skipping installation\e[0m"
+    echo -e "\e[35mMYSQL is already installed ... Skipping installation\e[0m"
 
 else
     echo "Installing MYSQL server ..."

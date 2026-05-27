@@ -1,6 +1,8 @@
 #!/bin/bash
 
 USERID=$(id -u)
+LOGS_DIR=/root/logs
+LOGS_FILE="$LOGS_DIR/$0.log"
 if [ $USERID -ne 0 ]; then
     echo -e "\e[31mYou are not a root user. Please run this script as a root user\e[0m"
     exit 1
@@ -18,7 +20,7 @@ validate() {
         echo -e "$1 server installation \e[32msuccessful\e[0m"
     fi
 }
-mysql --version
+mysql --version >> $LOGS_FILE
 
 if [ $? -eq 0 ]; then
     echo -e "\e[35mMYSQL is already installed ... Skipping installation\e[0m"

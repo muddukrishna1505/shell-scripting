@@ -2,8 +2,8 @@
 
 USERID=$(id -u)
 if [ $USERID -ne 0 ]; then
-    echo "You are not a root user. Please run this script as a root user"
+    echo -e "\e[31mYou are not a root user. Please run this script as a root user\e[0m"
     exit 1
 fi
-echo "You are a root user. You can run this script"
-echo "I'm continuing ..."
+echo -e "\e[32mYou are a root user. You can run this script\e[0m"
+echo -e "\e[32mI'm continuing ...\e[0m"

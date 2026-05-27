@@ -7,7 +7,7 @@ if [ $USERID -ne 0 ]; then
 fi
 # echo -e "\e[32mYou are a root user. You can run this script\e[0m"
 # echo -e "\e[32mI'm continuing ...\e[0m"
-dnf installed mysql
+mysql --version
 
 if [ $? -eq 0 ]; then
     echo " MYSQL is already installed ... Skipping installation"
@@ -23,4 +23,3 @@ else
      
     echo -e "MYSQL server installation \e[32msuccessful\e[0m"
 fi
-    

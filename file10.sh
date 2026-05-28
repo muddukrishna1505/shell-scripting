@@ -12,10 +12,10 @@ fi
 }
 mysql --version >> $LOGS_FILE
 
-validate $?
+validate "MYSQL"
 
 nginx --version >> $LOGS_FILE
-validate $?
+validate "NGINX"
 
 apache2 -v >> $LOGS_FILE
-validate $?
+validate "APACHE2"

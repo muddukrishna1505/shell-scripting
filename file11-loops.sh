@@ -2,7 +2,7 @@
 
 USERID=$(id -u) #Display user id
 
-LOGS_DIR=/var/log/shell-script
+LOGS_DIR=/root/logs
 LOGS_FILE=$LOGS_DIR/$0.log
 
 Time_Stamp=[ date "+%Y-%m-%d %H:%M:%S" ]

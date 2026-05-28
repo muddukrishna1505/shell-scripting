@@ -5,7 +5,7 @@ USERID=$(id -u) #Display user id
 LOGS_DIR=/root/logs
 LOGS_FILE=$LOGS_DIR/$0.log
 
-Time_Stamp=[ date "+%Y-%m-%d %H:%M:%S" ]
+Time_Stamp=$(date "+%Y-%m-%d %H:%M:%S")
 
 if [ $USERID -ne 0 ]; then
     echo "$Time_Stamp [Error] Please run with root user &>> LOGS_FILE"

@@ -10,12 +10,12 @@ validate() {
     echo -e "\e[31m$1 is not installed\e[0m"
 fi
 }
-mysql --version >> $LOGS_FILE
+mysql --version &&>> $LOGS_FILE
 
 validate "MYSQL"
 
-nginx --version >> $LOGS_FILE
+nginx --version &&>> $LOGS_FILE
 validate "NGINX"
 
-apache2 -v >> $LOGS_FILE
+apache2 -v &&>> $LOGS_FILE
 validate "APACHE2"
